@@ -1,0 +1,325 @@
+.main
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.background
+{
+    background-color: rgb(233, 244, 212);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  
+}
+.Layout
+{
+    display: flex;
+    flex-direction: column;
+    
+    margin:0vh;
+    
+}
+
+.formContainer
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vh;
+    justify-items: center;
+}
+.formContainer *
+{
+    text-decoration: none;
+    margin:2vh;
+    padding:2vh;
+    border: 2px solid yellowgreen ;
+    border-radius: 2vh;
+}
+
+.urunCard
+{
+    display: flex;
+    flex-direction:row;
+    padding:2vh;
+    margin:2vh;
+    border:2px solid yellowgreen;
+    border-radius: 1vh;
+    background-color: white;
+    justify-content:space-between;
+}
+.urunCardItems
+{
+    padding: 1vh;
+    margin:2vh;
+    border:2px solid yellowgreen;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(169, 169, 169);
+    /* justify-items: center;
+    align-items: center; */
+}
+.urunAramaInput
+{
+    padding:2vh;
+    margin:2vh;
+    border:2px solid yellowgreen;
+    border-radius: 1vh;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+.buttonContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding:1vh;
+    border-radius: 1vh;
+    
+}
+.buttonContainer button
+{
+    background-color: yellowgreen;
+    color:white;
+    font-size: 1.8vh;
+    border:2px solid yellowgreen;
+    border-radius:1vh;
+    width:auto;
+    height:30px;
+    padding: 10px;
+    text-align: center;
+    text-justify: center;
+    box-shadow: 3px 1px rgb(158, 158, 151);
+}
+
+/**********************************************************/
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top:50px;
+    margin-left:0px;
+    background-color: #f9f9f9;
+    max-width: 100px;
+    font-size: medium;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 10px;
+    z-index: 1;
+  }
+  .dropdown-content a
+  {
+    text-decoration: none;
+    color:black;
+    padding: 5px;
+  }
+  .dropdown-content a:active
+  {
+    color:yellowgreen;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+/*********************************************************/
+table {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  table td,
+  table th {
+    border: 3px solid #faf8f8;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: rgb(227, 247, 187)
+  } 
+  table tr:hover {
+    background-color:  rgb(233, 244, 212)
+  }
+  table th, thead td, tfoot td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color:yellowgreen;
+    color: white;
+  }
+
+  table input
+  {
+    border-style: none;
+    width: 100%;
+    background-color: rgb(247, 251, 240)
+  }
+
+  table .edit-cell-container button {
+    border-radius: 50px;
+    
+    border: 1px solid #ccc;
+    color: white;
+  }
+  table button[name="cancel"] {
+    color: white;
+    background-color:yellowgreen;
+    padding: 1vh;
+    margin:1vh;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(169, 169, 169);
+  }
+  table button[name="ekle"] {
+    color: white;
+    background-color:yellowgreen;
+    padding: 1vh;
+    border:1px solid yellowgreen;
+    margin:1vh;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(169, 169, 169);
+  }
+  table button[name="done"] {
+    color: white;
+    padding:1vh;
+    margin:1vh;
+    background-color: yellowgreen;
+    border:2px solid yellowgreen;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(169, 169, 169);
+  }
+  table input,
+  select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgb(247, 251, 240);
+    padding: 5px;
+    width: 100%;
+  }
+  table .edit-cell {
+    display: flex;
+    gap: 5px;
+  }
+  
+  table .footer-buttons
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  table .header-buttons
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  table .header-buttons button {
+    border: none;
+    background-color: transparent;
+    display: flex;
+   
+
+  }
+  table .footer-buttons button {
+    border: none;
+    background-color: transparent;
+    display: flex;
+   
+
+  }
+  table .edit-cell-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  table input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+  table .remove-button {
+    color:red;
+  }
+  table .add-button {
+    color:white;
+    /*çok güzel renk #4bbd7f*/
+  }
+  
+
+  table .edit-cell-action button[name="edit"] {
+   
+    padding: 1vh;
+    margin:2vh;
+    background-color: yellowgreen;
+    border:2px solid yellowgreen;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(169, 169, 169);
+  
+  }
+  
+
+  table .edit-cell-action button[name="remove"] {
+    color: white;
+    background-color: rgb(231, 227, 227);
+    padding: 1vh;
+    margin:2vh;
+    border-radius: 5px;;
+    background-color: yellowgreen;
+    box-shadow: 2px 2px rgb(169, 169, 169);
+    
+  }
+  table .edit-cell-action {
+    display: flex;
+    gap: 5px;
+  }
+
+  input:invalid {
+    border: 2px solid red;
+  }
+
+  /*******************************/
+
+  .form
+  {
+    display: flex;
+    flex-direction:column;
+    padding:1vh;
+    margin:1px;
+    border:2px solid yellowgreen;
+    border-radius: 1vh;
+    background-color: white;
+    align-items:center;
+  }
+  .form input
+  {
+    padding: 1vh;
+    margin:2vh;
+    border:1px solid yellowgreen;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(169, 169, 169);
+  }
+  .form button
+  {
+    padding: 1vh;
+    margin:1vh;
+    color:white;
+    background-color: yellowgreen;
+    border:1px solid yellowgreen;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(169, 169, 169);
+  }
+
+  /*************************/
+  .paginationButton
+  {
+    border :rgb(247, 251, 240);
+    background-color:rgb(247, 251, 240);
+  }
+ 
